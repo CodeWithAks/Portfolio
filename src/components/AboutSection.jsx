@@ -36,10 +36,9 @@ const AboutSection = () => {
             <div className="bg-white p-5 sm:p-6 rounded-2xl shadow-lg border border-zinc-200 w-200">
               <h1 className='text-center font-bold font-mono text-2xl'>What I Do</h1>
               <p className="text-sm sm:text-base md:text-lg leading-relaxed font-mono tracking-tight">
-                Hi, I’m <span className="font-bold text-blue-700">Akshara Goyal</span>.
                 <p>I’m a BCA student focused on full-stack web development using the MERN stack. <br></br>I enjoy understanding how applications work beyond the surface, from user interfaces to backend logic.<br></br>
-                  <span className='font-bold'>Frontend:</span> I build responsive and efficient interfaces from Figma designs using React and Tailwind CSS.<br></br>
-                  <span className='font-bold'>Backend:</span> I design MongoDB schemas and develop RESTful APIs using Node.js and Express.</p>
+                  <span className='font-bold'>Frontend:</span> Build responsive, user-friendly interfaces from Figma designs using React and Tailwind CSS.<br></br>
+                  <span className='font-bold'>Backend:</span> Design MongoDB schemas and develop RESTful APIs using Node.js and Express.</p>
               </p>
             </div>
 
@@ -47,10 +46,9 @@ const AboutSection = () => {
             <div className="bg-white p-5 sm:p-6 rounded-2xl shadow-lg border border-zinc-200 w-200">
               <h1 className='text-center font-bold font-mono text-2xl'>How I Work & Grow</h1>
               <p className="text-sm sm:text-base md:text-lg leading-relaxed font-mono mt-1">
-                <span className='font-bold'>Problem Solving:</span> I practice DSA to improve my logical thinking and write more efficient code.<br></br>
-                <span className='font-bold'>Quality Focus:</span> I aim to write clean, maintainable, and well-structured code that delivers reliable and user-friendly applications.<br></br>
-                Currently, I’m preparing for entry-level roles and internships where I can continue learning and contribute to real-world projects.
-
+                <span className='font-bold'>Problem Solving:</span> Practice DSA to strengthen logical thinking and write optimized code.<br></br>
+                <span className='font-bold'>Quality Focus:</span> Focus on writing clean, maintainable, and well-structured code for reliable, user-friendly applications.<br></br>
+                Currently preparing for entry-level roles and internships where I can apply my skills, learn from experienced developers, and contribute to real-world projects.
               </p>
             </div>
           </div>
