@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global font */
+body {
+	font-family: cursive;
+}
+
+/* Subtle global shadow */
+.soft-shadow {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Simple fade animation (used in Hero) */
+@keyframes fade-in-up {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in-up {
+	animation: fade-in-up 600ms ease-out both;
+}
+
+/* Hero background (NO floating shapes) */
+.gradient-hero {
+	background: linear-gradient(180deg, #eff6ff 0%, #ffffff 60%);
+}
+
+section {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  scroll-margin-top: var(--nav-height);
+}
+
+
+:root {
+  --nav-height: 20px;
+}
+
