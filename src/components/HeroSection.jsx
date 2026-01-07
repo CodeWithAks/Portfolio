@@ -6,7 +6,7 @@ const HeroSection = () => {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 md:py-16 lg:py-20">
                 <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 sm:gap-8 md:gap-10">
                     <div className="flex-1 text-center lg:text-left">
-                        <button className="border-slate-200 rounded-xl px-4 py-2 animate-bounce-once bg-white/70 backdrop-blur soft-shadow text-sm sm:text-base">
+                        <button className="border-slate-200 rounded-xl px-5 py-3 animate-bounce-once bg-white/70 backdrop-blur soft-shadow text-sm sm:text-base">
                             Hello !
                         </button>
 
@@ -17,7 +17,7 @@ const HeroSection = () => {
                         <h2
                             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold animate-fade-in-up leading-tight"
                             style={{ animationDelay: '120ms' }}>
-                            Software Developer
+                            Aspiring Software Developer
                         </h2>
 
                         <div

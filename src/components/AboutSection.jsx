@@ -1,21 +1,4 @@
-import React, { useEffect, useState } from 'react'
-
-const Typewriter = ({ text, speed = 60 }) => {
-  const [displayed, setDisplayed] = useState('')
-  const [index, setIndex] = useState(0)
-
-  useEffect(() => {
-    if (index < text.length) {
-      const timeout = setTimeout(() => {
-        setDisplayed(prev => prev + text[index])
-        setIndex(prev => prev + 1)
-      }, speed)
-      return () => clearTimeout(timeout)
-    }
-  }, [index, text, speed])
-
-  return <span>{displayed}</span>
-}
+import React from 'react'
 
 const AboutSection = () => {
   return (
@@ -77,7 +60,7 @@ const AboutSection = () => {
         <div className="mt-10 flex justify-center lg:justify-end">
           <div className="flex items-center gap-2 text-base sm:text-lg md:text-xl font-mono max-w-2xl text-center lg:text-left whitespace-nowrap">
             <i className="fa-solid fa-quote-left text-purple-500"></i>
-            <Typewriter text="Learning, building, and growing — one line of code at a time" />
+            <span>Learning, building, and growing — one line of code at a time</span>
 
           </div>
         </div>

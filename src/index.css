@@ -30,7 +30,7 @@ body {
 	animation: fade-in-up 600ms ease-out both;
 }
 
-/* Hero background (NO floating shapes) */
+/* Hero background */
 .gradient-hero {
 	background: linear-gradient(180deg, #eff6ff 0%, #ffffff 60%);
 }
