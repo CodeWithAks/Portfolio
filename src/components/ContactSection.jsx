@@ -19,12 +19,6 @@ const ContactSection = () => {
           
           {/* Contact Information (Left Side) */}
           <div className="space-y-6">
-            <div className="flex items-center gap-4 p-5 bg-white shadow-sm border border-slate-100 rounded-2xl transition-transform hover:scale-[1.02]">
-              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center">
-                <i className="fa-solid fa-phone text-blue-600 text-lg"></i>
-              </div>
-              <span className="text-lg text-slate-700 font-medium">+91 9711070999</span>
-            </div>
             
             <div className="flex items-center gap-4 p-5 bg-white shadow-sm border border-slate-100 rounded-2xl transition-transform hover:scale-[1.02]">
               <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center">
