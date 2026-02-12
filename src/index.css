@@ -35,15 +35,25 @@ body {
 	background: linear-gradient(180deg, #eff6ff 0%, #ffffff 60%);
 }
 
-section {
+/* section {
   min-height: calc(100vh - var(--nav-height));
   display: flex;
   align-items: center;
   scroll-margin-top: var(--nav-height);
+} */
+
+section {
+  /* min-height 100vh makes each section fill the whole screen */
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  display: flex;
+  flex-direction: column; /* Better for mobile stacking */
+  justify-content: center;
+  align-items: center;
 }
 
 
 :root {
-  --nav-height: 20px;
+  --nav-height: 80px;
 }
 
