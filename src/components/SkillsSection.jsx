@@ -18,6 +18,9 @@ const SkillsSection = () => {
               <i className="devicon-javascript-plain colored" title="JS" />
               <i className="devicon-html5-plain colored" title="HTML" />
             </div>
+            <p className="mt-3 text-sm text-gray-600 font-mono">
+              Building responsive, accessible interfaces.
+            </p>
           </div>
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border hover:shadow-md transition-shadow">
@@ -27,6 +30,9 @@ const SkillsSection = () => {
               <i className="devicon-mongodb-plain colored" />
               <i className="devicon-express-original" />
             </div>
+            <p className="mt-3 text-sm text-gray-600 font-mono">
+              Designing APIs and managing application data.
+            </p>
           </div>
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border md:col-span-2">

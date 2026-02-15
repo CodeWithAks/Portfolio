@@ -10,7 +10,11 @@ const HeroSection = () => {
                             Hello !
                         </button>
 
-                        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mt-4 mb-2 leading-tight">
+                        {/* <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mt-4 mb-2 leading-tight">
+                            I'm <span className="text-blue-500">Akshara Goyal</span>,
+                        </h1> */}   
+
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-2 animate-fade-in-up leading-tight">
                             I'm <span className="text-blue-500">Akshara Goyal</span>,
                         </h1>
 
@@ -24,6 +28,13 @@ const HeroSection = () => {
                                 Continuous learner dedicated to mastering modern software development patterns.
                             </p>
                         </div>
+
+                        <p
+                            className="text-right lg:text-left mt-2 sm:mt-3 text-base sm:text-lg animate-fade-in-up font-mono"
+                            style={{ animationDelay: '360ms' }}
+                        >
+                            <i class="fa-solid fa-code"></i> Writing better code today than yesterday — that’s the goal.
+                        </p>
 
                         <div className="socials mt-8 flex justify-center lg:justify-start gap-4 text-2xl">
                             <a href="https://github.com/CodeWithAks" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-white shadow-md hover:scale-110 transition-all"><i className="fa-brands fa-github text-black"></i></a>
