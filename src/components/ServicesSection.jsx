@@ -1,55 +1,35 @@
 import React from 'react'
 
 const services = [
-  {
-    title: "Frontend Development",
-    icon: "fa-display",
-    description:
-      "I design and develop responsive, user-friendly interfaces using React.js and Tailwind CSS. I focus on clean layouts and smooth interactions.",
-  },
-  {
-    title: "Backend Development",
-    icon: "fa-server",
-    description:
-      "I build APIs and server-side logic using Node.js and Express, with MongoDB for handling data securely and efficiently.",
-  },
-  {
-    title: "Full-Stack Integration",
-    icon: "fa-layer-group",
-    description:
-      "I connect frontend and backend to build complete web applications — from concept to deployment.",
-  },
-  {
-    title: "UI/UX Design (Beginner)",
-    icon: "fa-pencil-ruler",
-    description:
-      "I create wireframes and layout designs on Figma that prioritize clarity, simplicity, and user experience.",
-  },
+  { title: "Frontend Development", icon: "fa-display", description: "Responsive, user-friendly interfaces using React and Tailwind CSS." },
+  { title: "Backend Development", icon: "fa-server", description: "Scalable APIs using Node.js and Express with MongoDB." },
+  { title: "Full-Stack Integration", icon: "fa-layer-group", description: "Connecting UI with logic to build end-to-end applications." },
+  { title: "UI/UX Design", icon: "fa-pencil-ruler", description: "Modern, clean designs focused on user experience." },
 ];
 
 const ServicesSection = () => {
   return (
-    <div className='w-full min-h-screen py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-6 bg-gradient-to-r from-blue-100 via-white to-pink-50'>
-      <h1 className="text-3xl sm:text-4xl md:text-5xl text-center underline mb-8 sm:mb-12">My Services</h1>
-      <div className='text-center mb-8 sm:mb-12'>
-        <h2 className='font-mono text-sm sm:text-base md:text-lg bg-green-300 rounded-md border px-4 py-2 inline-block'>
-          "I'm currently exploring web development and UI/UX design. Here's what I offer so far."
-        </h2>
-      </div>
+    <section className='py-16 px-4 bg-gradient-to-r from-blue-100 via-white to-pink-50'>
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-3xl sm:text-5xl text-center underline mb-8">My Services</h1>
+        <div className='text-center mb-12'>
+          <p className='font-mono text-sm sm:text-base bg-green-100 border border-green-200 rounded-lg px-6 py-3 inline-block shadow-sm'>
+            "Building high-quality digital experiences from the ground up."
+          </p>
+        </div>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto'>
-        {services.map((service, index) => (
-          <div key={index} className='bg-blue-50 p-4 sm:p-6 h-auto border-cyan-300 border-2 text-base sm:text-lg rounded-xl hover:shadow-lg transition-shadow duration-300'>
-            <div className='flex items-center gap-3 mb-4'>
-               <i className={`fa-solid ${service.icon} text-xl sm:text-2xl text-blue-500`}></i>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">{service.title}</h3>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+          {services.map((s, i) => (
+            <div key={i} className='bg-white p-6 rounded-2xl border-2 border-blue-50 hover:border-blue-200 shadow-sm hover:shadow-xl transition-all'>
+              <div className='text-3xl text-blue-500 mb-4'><i className={`fa-solid ${s.icon}`}></i></div>
+              <h3 className="text-xl font-bold mb-2">{s.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
             </div>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{service.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default ServicesSection
+export default ServicesSection;

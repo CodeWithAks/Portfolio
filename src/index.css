@@ -57,3 +57,14 @@ section {
   --nav-height: 80px;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* index.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* This prevents the horizontal scroll bug */
+  width: 100%;
+}
