@@ -14,15 +14,15 @@ const projects = [
     desc: "A full-stack job portal with secure JWT authentication and role-based access.",
     stack: "MERN Stack, JWT, Bcrypt",
     image: "/images/Hirely.jpeg",
-    github: "#",
-    live: "#",
+    github: "https://github.com/CodeWithAks/Hirely",
+    live: "https://hirely-rouge.vercel.app/",
   },
 ];
 
 const ProjectsSection = () => {
   return (
     <section id="project" className="py-16 px-4 bg-gradient-to-r from-blue-100 via-white to-pink-50 scroll">
-      <h1 className="text-3xl sm:text-5xl font-bold text-center underline underline-offset-8 mb-12">Projects in Action</h1>
+      <h1 className="text-3xl sm:text-5xl font-bold text-center underline underline-offset-8 mb-12">Featured Projects</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {projects.map((project, index) => (
@@ -33,8 +33,8 @@ const ProjectsSection = () => {
               <p className="text-gray-600 font-mono text-sm mb-4 flex-grow">{project.desc}</p>
               <p className="text-xs font-bold uppercase tracking-wider text-blue-600 mb-4">Stack: {project.stack}</p>
               <div className="flex justify-between items-center pt-4 border-t">
-                <a href={project.github} className="text-blue-500 font-bold hover:underline">Code →</a>
-                <a href={project.live} className="text-green-500 font-bold hover:underline">Live Demo →</a>
+                <a href={project.github} className="text-blue-500 font-bold hover:underline">🔗 View Code</a>
+                <a href={project.live} className="text-green-500 font-bold hover:underline">🚀 Live Project</a>
               </div>
             </div>
           </div>

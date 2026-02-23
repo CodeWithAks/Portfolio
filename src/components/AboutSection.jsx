@@ -23,24 +23,51 @@ const AboutSection = () => {
           </div>
 
           <div className="flex flex-col gap-4 sm:gap-5 md:gap-6">
+        
             {/* Card 1 */}
             <div className="bg-white p-4 sm:p-5 md:p-6 rounded-2xl shadow-md border border-zinc-100 hover:shadow-lg transition-shadow">
-              <h3 className='font-bold font-mono text-base sm:text-lg md:text-xl mb-2 sm:mb-3 text-blue-600'>What I Do</h3>
-              <div className="text-xs sm:text-sm md:text-base space-y-2 font-mono leading-relaxed">
-                <p>I’m a BCA student focused on full-stack web development using the MERN stack.I enjoy understanding how applications work beyond the surface, from user interfaces to backend logic.</p>
-                <p><span className='font-bold'>Frontend:</span> Build responsive interfaces using React and Tailwind CSS.</p>
-                <p><span className='font-bold'>Backend:</span> Design MongoDB schemas and develop APIs using Node.js.</p>
-              </div>
+              <h3 className='font-bold font-mono text-base sm:text-lg md:text-xl mb-2 sm:mb-3 text-blue-600'>
+                What I Do
+              </h3>
+
+              <p className="text-xs sm:text-sm md:text-base font-mono mb-3 leading-relaxed">
+                I’m a BCA student focused on full-stack web development using the MERN stack.I enjoy understanding how applications work beyond the surface, from user interfaces to backend logic.
+              </p>
+
+              <ul className="list-disc pl-4 space-y-2 text-xs sm:text-sm md:text-base font-mono leading-relaxed">
+                <li>
+                  <span className='font-bold'>Frontend:</span> Clean, responsive interfaces with React & Tailwind CSS.
+                </li>
+                <li>
+                  <span className='font-bold'>Backend:</span> REST APIs and MongoDB schema design using Node.js.
+                </li>
+                {/* <li>
+                  <span className='font-bold'>Approach:</span> End-to-end feature development with clean structure and maintainable code.
+                </li> */}
+              </ul>
             </div>
 
 
-          {/* Card 2 */}
+            {/* Card 2 */}
             <div className="bg-white p-4 sm:p-5 md:p-6 rounded-2xl shadow-md border border-zinc-100 hover:shadow-lg transition-shadow">
-              <h3 className='font-bold font-mono text-base sm:text-lg md:text-xl mb-2 sm:mb-3 text-indigo-600'>How I Work & Grow</h3>
-              <p className="text-xs sm:text-sm md:text-base font-mono leading-relaxed">
-                <span className='font-bold'>Problem Solving:</span> Practice DSA to strengthen logical thinking and write optimized code. <br />
-                Currently preparing for entry-level roles where I can contribute to real-world projects and grow.
-              </p>
+              <h3 className='font-bold font-mono text-base sm:text-lg md:text-xl mb-2 sm:mb-3 text-indigo-600'>
+                How I Work & Grow
+              </h3>
+
+              <ul className="list-disc pl-4 space-y-2 text-xs sm:text-sm md:text-base font-mono leading-relaxed">
+                <li>
+                  <span className='font-bold'>Consistency Over Perfection:</span> Steady, long-term improvement.
+                </li>
+                <li>
+                  <span className='font-bold'>DSA & Problem Solving:</span> Strengthening logic through regular practice.
+                </li>
+                <li>
+                  <span className='font-bold'>Building with Purpose:</span> Projects that reinforce core concepts.
+                </li>
+                <li>
+                  <span className='font-bold'>Open to Feedback:</span> Refining code through constructive input.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -50,7 +77,7 @@ const AboutSection = () => {
           <i className="fa-solid fa-quote-left text-purple-500 text-lg sm:text-xl md:text-2xl flex-shrink-0"></i>
           <span className="text-xs sm:text-sm md:text-base lg:text-lg font-mono text-center sm:text-left max-w-xs sm:max-w-2xl leading-relaxed">Learning, building, and growing — one line of code at a time</span>
         </div>
-        
+
       </div>
     </section>
   )

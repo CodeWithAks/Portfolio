@@ -17,9 +17,11 @@ const SkillsSection = () => {
             <h2 className="text-xl font-bold mb-4 flex items-center gap-2"><i className="fa-solid fa-code text-blue-500"></i> Frontend</h2>
             <div className="flex flex-wrap gap-6 text-4xl">
               <i className="devicon-react-original colored" title="React" />
+              <i className="devicon-redux-original colored" title="Redux" />
               <i className="devicon-tailwindcss-original colored" title="Tailwind" />
               <i className="devicon-javascript-plain colored" title="JS" />
               <i className="devicon-html5-plain colored" title="HTML" />
+              <i className="devicon-css3-plain colored" title="CSS3" />
             </div>
             <p className="mt-3 text-sm text-gray-600 font-mono">
               Building responsive, accessible interfaces.
@@ -42,15 +44,22 @@ const SkillsSection = () => {
 
           {/* Tools */}
           <div className="bg-white rounded-2xl p-6 shadow-md border md:col-span-2">
-            <h2 className="text-xl font-bold mb-4">Design & Tools</h2>
+            <h2 className="text-xl font-bold mb-4">Tools & Deployment</h2>
             <div className="flex flex-wrap gap-4 text-4xl">
               <i className="devicon-figma-plain colored" />
               <i className="devicon-git-plain colored" />
               <i className="devicon-github-original" />
-               <i className="devicon-postman-plain colored" />
+              <i className="devicon-postman-plain colored" />
+              <i className="devicon-vercel-original" title="Vercel" />
+              <img
+                src="https://cdn.simpleicons.org/render/000000"
+                alt="Render"
+                title="Render"
+                className="w-9 h-9"
+              />
             </div>
             <p className="mt-3 text-sm text-gray-600 font-mono">
-              Designing interfaces and collaborating through version control.
+              Version control, API testing, UI design, and deploying full-stack applications to production.
             </p>
           </div>
 
