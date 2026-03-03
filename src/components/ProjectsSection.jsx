@@ -11,8 +11,8 @@ const projects = [
   "Dynamic trailer fetching with conditional rendering"
 ],
     tech: ["React", "React Router", "Tailwind CSS", "TMDB API", "Vite"],
-    image: "/images/showTimeHub.jpeg",
-    video: "/videos/Movie-App.mp4",
+    // image: "/images/showTimeHub.jpeg",
+    video: "/Videos/Movie-App.mp4",
     github: "https://github.com/CodeWithAks/ShowTimeHub",
     live: "https://show-time-hub.vercel.app/",
   },
@@ -26,8 +26,8 @@ const projects = [
       "Responsive UI with modern React components"
     ],
     tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Bcrypt"],
-    image: "/images/Hirely.jpeg",
-    video: "/videos/Hirely.mp4",
+    // image: "/images/Hirely.jpeg",
+    video: "/Videos/Hirely.mp4",
     github: "https://github.com/CodeWithAks/Hirely",
     live: "https://hirely-rouge.vercel.app/",
   },
