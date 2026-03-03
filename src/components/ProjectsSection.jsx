@@ -69,14 +69,9 @@ const ProjectCard = ({ project }) => {
     >
       {/* Project Media Container */}
       <div className="relative overflow-hidden bg-gray-200 h-56 sm:h-64">
-        {/* Image - Shown by default */}
-        <img
-          src={project.image}
-          alt={project.title}
-          className={`absolute w-full h-full object-cover transition-transform duration-300 ${!isHovered ? 'hover:scale-105' : 'scale-100'}`}
-        />
 
-
+        
+        {/* Project Videos */}
         <video
           src={project.video}
           autoPlay
