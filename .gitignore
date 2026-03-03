@@ -23,6 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# Media files (GitHub size limit protection)
-public/videos/
-*.mp4
