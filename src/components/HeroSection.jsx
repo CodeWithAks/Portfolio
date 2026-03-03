@@ -10,9 +10,6 @@ const HeroSection = () => {
                             Hello !
                         </button>
 
-                        {/* <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mt-4 mb-2 leading-tight">
-                            I'm <span className="text-blue-500">Akshara Goyal</span>,
-                        </h1> */}
 
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-2 animate-fade-in-up leading-tight">
                             I'm <span className="text-blue-500">Akshara Goyal</span>,
@@ -59,7 +56,7 @@ const HeroSection = () => {
 
                     <div className="flex-1 flex justify-center lg:justify-end">
                         <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white bg-white">
-                            <img src="/images/my-img-removebg-preview.png" alt="Akshara" className="w-full h-full object-cover" />
+                            <img src="/images/final-image.png" alt="Akshara" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>
