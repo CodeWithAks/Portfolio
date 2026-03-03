@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import movieVideo from "../assets/videos/Movie-App.mp4";
+import hirelyVideo from "../assets/videos/Hirely.mp4";
 
 const projects = [
   {
@@ -12,7 +14,7 @@ const projects = [
 ],
     tech: ["React", "React Router", "Tailwind CSS", "TMDB API", "Vite"],
     // image: "/images/showTimeHub.jpeg",
-    video: "/videos/Movie-App.mp4",
+    video: movieVideo,
     github: "https://github.com/CodeWithAks/ShowTimeHub",
     live: "https://show-time-hub.vercel.app/",
   },
@@ -27,7 +29,7 @@ const projects = [
     ],
     tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Bcrypt"],
     // image: "/images/Hirely.jpeg",
-    video: "/videos/Hirely.mp4",
+    video: hirelyVideo,
     github: "https://github.com/CodeWithAks/Hirely",
     live: "https://hirely-rouge.vercel.app/",
   },
