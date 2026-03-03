@@ -12,7 +12,7 @@ const HeroSection = () => {
 
                         {/* <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mt-4 mb-2 leading-tight">
                             I'm <span className="text-blue-500">Akshara Goyal</span>,
-                        </h1> */}   
+                        </h1> */}
 
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-2 animate-fade-in-up leading-tight">
                             I'm <span className="text-blue-500">Akshara Goyal</span>,
@@ -42,8 +42,17 @@ const HeroSection = () => {
                             <a href="mailto:meakshara.goyal@gmail.com" className="p-3 rounded-full bg-white shadow-md hover:scale-110 transition-all"><i className="fa-solid fa-envelope text-slate-700"></i></a>
                         </div>
 
+                        {/* CTA Button */}
                         <div className='flex flex-col sm:flex-row gap-4 mt-10 justify-center lg:justify-start font-medium'>
-                            <a href="#cv" className='bg-white border-slate-200 rounded-full px-7 py-4 border shadow-sm hover:bg-slate-50 transition-all text-center'>Download CV</a>
+                            <a
+                                href="/Akshara-Resume.pdf"
+                                download="Akshara_Goyal_Resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white border border-slate-200 rounded-full px-7 py-4 border shadow-sm hover:bg-slate-50 transition-all flex items-center gap-2"
+                            >
+                                Download CV
+                            </a>
                             <a href="#project" className='bg-slate-900 text-white rounded-full px-7 py-4 border hover:bg-slate-800 transition-all text-center'>View Projects</a>
                         </div>
                     </div>
