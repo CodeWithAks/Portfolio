@@ -1,160 +1,214 @@
-import React, { useState } from 'react';
+import React from "react";
 import movieVideo from "../assets/videos/Movie-App.mp4";
 import hirelyVideo from "../assets/videos/Hirely.mp4";
+import vaultixVideo from "../assets/videos/Vaultix-Video.mp4";
 
-const projects = [
-  {
-    title: "ShowTimeHub",
-    desc: "A movie discovery platform integrating TMDB API with dynamic search and contextual state management.",
-    features: [
-  "Debounced search with TMDB API integration",
-  "Auto-rotating hero banner with dynamic content",
-  "Genre & rating-based filtering using Context API",
-  "Dynamic trailer fetching with conditional rendering"
-],
-    tech: ["React", "React Router", "Tailwind CSS", "TMDB API", "Vite"],
-    // image: "/images/showTimeHub.jpeg",
-    video: movieVideo,
-    github: "https://github.com/CodeWithAks/ShowTimeHub",
-    live: "https://show-time-hub.vercel.app/",
-  },
-  {
-    title: "Hirely",
-    desc: "A full-stack MERN job portal with JWT authentication and role-based dashboards for recruiters and candidates.",
-    features: [
-      "Secure JWT authentication with bcrypt password encryption",
-      "Role-based access control for employers and candidates",
-      "RESTful API with MongoDB integration",
-      "Responsive UI with modern React components"
-    ],
-    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Bcrypt"],
-    // image: "/images/Hirely.jpeg",
-    video: hirelyVideo,
-    github: "https://github.com/CodeWithAks/Hirely",
-    live: "https://hirely-rouge.vercel.app/",
-  },
-];
+/* -TECH STACK */
 
 const TechBadge = ({ tech }) => {
-  const colorMap = {
-    'React': 'bg-blue-100 text-blue-800',
-    'Node.js': 'bg-green-100 text-green-800',
-    'MongoDB': 'bg-emerald-100 text-emerald-800',
-    'Express.js': 'bg-gray-100 text-gray-800',
-    'Tailwind CSS': 'bg-cyan-100 text-cyan-800',
-    'TMDB API': 'bg-purple-100 text-purple-800',
-    'React Router': 'bg-red-100 text-red-800',
-    'Vite': 'bg-yellow-100 text-yellow-800',
-    'JWT': 'bg-orange-100 text-orange-800',
-    'Bcrypt': 'bg-indigo-100 text-indigo-800',
-    'RESTful API': 'bg-pink-100 text-pink-800',
+  const colors = {
+    React: "bg-blue-100 text-blue-700",
+    "React.js": "bg-blue-100 text-blue-700",
+    "Node.js": "bg-green-100 text-green-700",
+    Express: "bg-gray-200 text-gray-700",
+    "Express.js": "bg-gray-200 text-gray-700",
+    MongoDB: "bg-emerald-100 text-emerald-700",
+    JWT: "bg-orange-100 text-orange-700",
+    "Redux Toolkit": "bg-purple-100 text-purple-700",
+    Tailwind: "bg-cyan-100 text-cyan-700",
+    "Tailwind CSS": "bg-cyan-100 text-cyan-700",
+    Vercel: "bg-black text-white",
+    Render: "bg-indigo-100 text-indigo-700",
   };
 
-  const bgColor = colorMap[tech] || 'bg-gray-100 text-gray-800';
-
   return (
-    <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${bgColor}`}>
+    <span
+      className={`px-2 py-1 text-[11px] rounded-full font-medium ${
+        colors[tech] || "bg-gray-100 text-gray-700"
+      }`}
+    >
       {tech}
     </span>
   );
 };
 
+/* CARD */
+
 const ProjectCard = ({ project }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <div
-      key={project.title}
-      className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:shadow-blue-200/50 flex flex-col h-full"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {/* Project Media Container */}
-      <div className="relative overflow-hidden bg-gray-200 h-56 sm:h-64">
+    <div className="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
 
-        
-        {/* Project Videos */}
+      {/* VIDEO */}
+      <div className="md:w-[45%] w-full">
         <video
           src={project.video}
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
-          className="absolute w-full h-full object-cover"
+          className="w-full h-56 md:h-full object-cover rounded-xl border"
         />
       </div>
 
-      {/* Project Content */}
-      <div className="p-6 sm:p-8 flex flex-col flex-grow">
-        {/* Title */}
-        <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-          {project.title}
-        </h3>
+      {/* CONTENT */}
+      <div className="flex-1 flex flex-col justify-between">
 
-        {/* Description */}
-        <p className="text-gray-700 leading-relaxed mb-5 text-base">
-          {project.desc}
-        </p>
+        <div>
 
-        {/* Features List */}
-        <div className="mb-6">
-          <ul className="space-y-2">
-            {project.features.map((feature, idx) => (
-              <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
-                <span className="text-blue-600 font-bold text-lg leading-none mt-0.5">•</span>
-                <span>{feature}</span>
-              </li>
+          {/* TITLE */}
+          <h2 className="text-2xl font-bold text-gray-900">
+            {project.title}
+          </h2>
+
+          {/* DESC */}
+          <p className="text-gray-600 mt-3 leading-relaxed">
+            {project.desc}
+          </p>
+
+          {/* KEY FEATURES */}
+          <div className="mt-5">
+            <h4 className="text-sm font-semibold text-gray-800 mb-2">
+              Key Features
+            </h4>
+
+            <ul className="space-y-2">
+              {project.features.map((f, i) => (
+                <li key={i} className="text-sm text-gray-600 flex gap-2">
+                  <span className="text-blue-500">•</span>
+                  {f}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* TECH STACK */}
+          <div className="mt-5 flex flex-wrap gap-2">
+            {project.tech.map((t, i) => (
+              <TechBadge key={i} tech={t} />
             ))}
-          </ul>
+          </div>
+
         </div>
 
-        {/* Tech Stack Badges */}
-        <div className="mb-6 flex flex-wrap gap-2">
-          {project.tech.map((tech, idx) => (
-            <TechBadge key={idx} tech={tech} />
-          ))}
-        </div>
-
-        {/* Divider */}
-        <div className="border-t border-gray-200 my-2"></div>
-
-        {/* Action Links */}
-        <div className="flex gap-4 sm:gap-6 pt-4 flex-wrap">
+        {/* BUTTONS */}
+        <div className="flex gap-3 mt-6">
           <a
             href={project.github}
             target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors duration-200 text-sm"
+            className="px-4 py-2 text-sm bg-gray-900 text-white rounded-lg hover:bg-gray-800"
           >
-            <span>→</span> View Code
+            View Code
           </a>
+
           <a
             href={project.live}
             target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors duration-200 text-sm"
+            className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700"
           >
-            <span>↗</span> Live Demo
+            Live Demo
           </a>
         </div>
+
       </div>
     </div>
   );
 };
 
+/*  PROJECT CONTENT */
+
+const projects = [
+  {
+    title: "Vaultix",
+    video: vaultixVideo,
+    desc:
+      "A full-stack banking system simulating real-world financial workflows with secure authentication and ledger-based transactions.",
+    features: [
+      "User authentication & account management",
+      "Money transfers with transaction history",
+      "Financial analytics dashboard",
+      "Ledger-based balance system (no direct updates)",
+    ],
+    tech: [
+      "React.js",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Tailwind CSS",
+    ],
+    github: "https://github.com/CodeWithAks/Vaultix",
+    live: "https://vaultix-five.vercel.app/",
+  },
+
+  {
+    title: "Hirely",
+    video: hirelyVideo,
+    desc:
+      "Full-stack job portal with authentication and role-based dashboards.",
+    features: [
+      "JWT authentication system",
+      "Role-based access control",
+      "Job posting & applications",
+    ],
+    tech: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "JWT",
+      "Bcrypt",
+    ],
+    github: "https://github.com/CodeWithAks/Hirely",
+    live: "https://hirely-rouge.vercel.app/",
+  },
+
+  {
+    title: "ShowTimeHub",
+    video: movieVideo,
+    desc:
+      "Movie discovery platform using TMDB API with dynamic search and filtering features.",
+    features: [
+      "Debounced API search",
+      "Dynamic genre filtering",
+      "Trailer preview system",
+    ],
+    tech: ["React", "Tailwind CSS", "TMDB API", "Vite"],
+    github: "https://github.com/CodeWithAks/ShowTimeHub",
+    live: "https://show-time-hub.vercel.app/",
+  },
+];
+
+/*  SECTION  */
+
 const ProjectsSection = () => {
   return (
-    <section id="project" className="py-20 px-4 bg-gradient-to-r from-blue-100 via-white to-pink-50 scroll">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-bold text-center text-gray-900 mb-3">Featured Projects</h1>
-        <p className="text-center text-gray-600 mb-16 text-lg">Learning by Building</p>
+    <section
+      id="project"
+      className="py-20 px-4 relative overflow-hidden scroll-smooth"
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-100 via-white to-pink-50"></div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-300 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-pink-300 rounded-full blur-3xl opacity-20"></div>
+
+      {/* CONTENT */}
+      <div className="relative max-w-6xl mx-auto">
+
+        <h2 className="text-4xl font-bold text-center text-gray-900">
+          Projects
+        </h2>
+
+        <p className="text-center text-gray-600 mt-2 mb-12">
+          Real-world applications built while learning full-stack development
+        </p>
+
+        <div className="space-y-10">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
         </div>
+
       </div>
     </section>
   );

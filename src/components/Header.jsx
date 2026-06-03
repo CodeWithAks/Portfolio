@@ -4,7 +4,6 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    // Reduced py-3 to py-2 to shrink the white header area
     <div className="fixed top-0 left-0 w-full bg-white py-2 md:py-3 px-4 z-50 shadow-sm">
       <div className="bg-zinc-900 text-white rounded-xl md:rounded-full max-w-5xl mx-auto px-4 md:px-8 py-2 md:py-3 shadow-lg">
         

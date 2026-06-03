@@ -2,80 +2,82 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-
-    <section id="about" className="scroll w-full bg-gradient-to-r from-blue-100 via-white to-pink-50 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
+    <section
+      id="about"
+      className="scroll w-full bg-gradient-to-r from-blue-100 via-white to-pink-50 overflow-hidden"
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
 
         {/* Heading */}
-        <div className="text-center mb-6 sm:mb-8 md:mb-10">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">About Me</h1>
-          <div className="mx-auto mt-2 sm:mt-3 h-1 w-16 sm:w-20 md:w-24 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500" />
+        <div className="text-center mb-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+            About Me
+          </h1>
+
+          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500" />
         </div>
 
-        {/* Image + Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
+        {/* Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+          {/* IMAGE */}
           <div className="flex justify-center">
             <img
               src="/images/bio-img.jpg"
               alt="Akshara"
-              className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover rounded-2xl border-4 border-white shadow-2xl"
+              className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 object-cover rounded-2xl border-4 border-white shadow-2xl"
             />
           </div>
 
-          <div className="flex flex-col gap-4 sm:gap-5 md:gap-6">
-        
+          
+          <div className="flex flex-col gap-6">
+
             {/* Card 1 */}
-            <div className="bg-white p-4 sm:p-5 md:p-6 rounded-2xl shadow-md border border-zinc-100 hover:shadow-lg transition-shadow">
-              <h3 className='font-bold font-mono text-base sm:text-lg md:text-xl mb-2 sm:mb-3 text-blue-600'>
+            <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 transition">
+              <h3 className="font-bold text-lg md:text-xl mb-3 text-blue-600">
                 What I Do
               </h3>
 
-              <p className="text-xs sm:text-sm md:text-base font-mono mb-3 leading-relaxed">
-                I’m a BCA student focused on full-stack web development using the MERN stack.I enjoy understanding how applications work beyond the surface, from user interfaces to backend logic.
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-700 mb-4">
+                I’m a BCA student focused on full-stack web development using the MERN stack.
+                I enjoy understanding how applications work beyond the surface, from UI to backend logic.
               </p>
 
-              <ul className="list-disc pl-4 space-y-2 text-xs sm:text-sm md:text-base font-mono leading-relaxed">
+              <ul className="space-y-2 text-sm sm:text-base md:text-lg text-gray-700">
                 <li>
-                  <span className='font-bold'>Frontend:</span> Clean, responsive interfaces with React & Tailwind CSS.
+                  <span className="font-semibold">Frontend:</span> Clean, responsive interfaces with React & Tailwind CSS.
                 </li>
                 <li>
-                  <span className='font-bold'>Backend:</span> REST APIs and MongoDB schema design using Node.js.
+                  <span className="font-semibold">Backend:</span> REST APIs and MongoDB schema design using Node.js.
                 </li>
-                {/* <li>
-                  <span className='font-bold'>Approach:</span> End-to-end feature development with clean structure and maintainable code.
-                </li> */}
               </ul>
             </div>
 
-
             {/* Card 2 */}
-            <div className="bg-white p-4 sm:p-5 md:p-6 rounded-2xl shadow-md border border-zinc-100 hover:shadow-lg transition-shadow">
-              <h3 className='font-bold font-mono text-base sm:text-lg md:text-xl mb-2 sm:mb-3 text-indigo-600'>
+            <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 transition">
+              <h3 className="font-bold text-lg md:text-xl mb-3 text-indigo-600">
                 How I Work & Grow
               </h3>
 
-              <ul className="list-disc pl-4 space-y-2 text-xs sm:text-sm md:text-base font-mono leading-relaxed">
-                <li>
-                  <span className='font-bold'>Consistency Over Perfection:</span> Steady, long-term improvement.
-                </li>
-                <li>
-                  <span className='font-bold'>DSA & Problem Solving:</span> Strengthening logic through regular practice.
-                </li>
-                <li>
-                  <span className='font-bold'>Building with Purpose:</span> Projects that reinforce core concepts.
-                </li>
-                <li>
-                  <span className='font-bold'>Open to Feedback:</span> Refining code through constructive input.
-                </li>
+              <ul className="space-y-2 text-sm sm:text-base md:text-lg text-gray-700">
+                <li><b>Consistency Over Perfection:</b> Steady improvement.</li>
+                <li><b>DSA Practice:</b> Strengthening logic daily.</li>
+                <li><b>Building with Purpose:</b> Real-world project thinking.</li>
+                <li><b>Open to Feedback:</b> Constant iteration.</li>
               </ul>
             </div>
+
           </div>
         </div>
 
         {/* Quote */}
-        <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center lg:justify-end items-center lg:items-end gap-2 sm:gap-3 px-2">
-          <i className="fa-solid fa-quote-left text-purple-500 text-lg sm:text-xl md:text-2xl flex-shrink-0"></i>
-          <span className="text-xs sm:text-sm md:text-base lg:text-lg font-mono text-center sm:text-left max-w-xs sm:max-w-2xl leading-relaxed">Learning, building, and growing — one line of code at a time</span>
+        <div className="mt-12 flex justify-center lg:justify-end">
+          <div className="flex items-start gap-3 max-w-2xl">
+            <i className="fa-solid fa-quote-left text-purple-500 text-2xl mt-1"></i>
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+              Learning, building, and growing — one line of code at a time
+            </p>
+          </div>
         </div>
 
       </div>

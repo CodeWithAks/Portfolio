@@ -21,7 +21,7 @@ const HeroSection = () => {
 
                         <div className="mt-6 flex items-start gap-3 justify-center lg:justify-start">
                             <i className="fa-solid fa-quote-left text-xl text-blue-500 mt-1"></i>
-                            <p className="text-base sm:text-lg border p-4 rounded-xl bg-white/70 backdrop-blur soft-shadow max-w-md">
+                            <p className="text-base sm:text-lg bg-white/60 backdrop-blur-md rounded-xl p-4 shadow-md backdrop-blur soft-shadow max-w-md">
                                 Continuous learner dedicated to mastering modern software development patterns.
                             </p>
                         </div>
@@ -42,7 +42,7 @@ const HeroSection = () => {
                         {/* CTA Button */}
                         <div className='flex flex-col sm:flex-row gap-4 mt-10 justify-center lg:justify-start font-medium'>
                             <a
-                                href="/Akshara's-Resume.pdf"
+                                href="/Akshara_Goyal_Resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white border border-slate-200 rounded-full px-7 py-4 shadow-sm hover:bg-slate-50 transition-all flex items-center gap-2"
